@@ -28,6 +28,7 @@
 
                         <div id="post-content">
                           {{ .Content }}
+                          {{ partial "share-buttons.html" . }}
                         </div>
                         <!-- /#post-content -->
                         {{ if .Site.DisqusShortname }}
