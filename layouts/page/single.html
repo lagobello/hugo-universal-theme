@@ -4,6 +4,9 @@
   <head>
     {{ partial "headers.html" . }}
     {{ partial "custom_headers.html" . }}
+    {{ if eq .File.BaseFileName "properties" }}
+    {{ partial "structured-data-lots.html" . }}
+    {{ end }}
   </head>
 
   <body>
