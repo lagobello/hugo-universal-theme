@@ -106,3 +106,8 @@
 <!-- JSON-LD Structured Data -->
 {{ if and (eq .Section "blog") .IsPage }}{{ partial "json-ld-blog.html" . }}{{ end }}
 {{ if .Params.faq }}{{ partial "json-ld-faq.html" . }}{{ end }}
+
+<!-- Tracking & Verification -->
+{{ partial "facebook-verification.html" . }}
+{{ partial "meta-pixel-head.html" . }}
+{{ partial "gtm-head.html" . }}
